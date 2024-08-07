@@ -907,4 +907,47 @@ button {
     color: #ef5051;
 }
 
-/*-------------------------Video Banner-----------------*/
+/*-------------------------Botao-----------------*/
+.botao {
+    background-color: #FFC107; /* Laranja */
+    border: 2px solid #000; /* Preto */
+    color: #000000; /* Preto */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    animation: pulse 2s infinite;
+    font-weight: bold;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.botao:hover {
+    background-color: #e0a800; /* Laranja mais escuro para efeito hover */
+    transform: scale(1.05); /* Aumenta o tamanho do botão */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    animation: shine 0.6s forwards; /* Animação de brilho */
+}
+@keyframes shine {
+    0% {
+        background-color: #FFC107; /* Laranja original */
+    }
+    50% {
+        background-color: #FFB300; /* Laranja brilhante */
+    }
+    100% {
+        background-color: #FFC107; /* Laranja original */
+    }
+}
